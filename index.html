@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="meal,food,popular,top,dish">
+    <meta name="author" content="Aliaksandr Padabed">
+    <meta name="description" content="7 most popular meals">
+    <link rel="stylesheet" href="style.css">
+    <title>7 most popular meals</title>
+</head>
+<body>
+
+<header>
+    <img src="photos/logo.jpg" id="logo" class="logo" alt="logo">
+    <h1 class="nagłówek">7 najpopularniejszych dań na świecie</h1>
+</header>
+
+<div class="topnav">
+  <a href="#galeria">galeria</a>
+  <a href="#opisy">opisy</a>
+  <a href="#info">pochodzenie</a>
+  <a href="#quiz">ankieta</a>
+  <a href="#film">film</a>
+  <a href="#mapa">mapa</a>
+</div>
+
+<main id="gallery" class="gallery-section">
+      <h2>Najpopularniejsze dania</h2><br>
+    
+      <div class="slideshow" id="slideshow">
+        
+        <input type="radio" name="gallery" id="s1" checked>
+        <input type="radio" name="gallery" id="s2">
+        <input type="radio" name="gallery" id="s3">
+        <input type="radio" name="gallery" id="s4">
+        <input type="radio" name="gallery" id="s5">
+        <input type="radio" name="gallery" id="s6">
+        <input type="radio" name="gallery" id="s7">
+      
+        <div class="viewport" aria-live="polite" id="viewport">
+          <div class="slides">
+            <div class="slide"><img src="photos/pizza.jpg" alt="potrawa1"></div>
+            <div class="slide"><img src="photos/kebab.jpg" alt="potrawa2"></div>
+            <div class="slide"><img src="photos/falafel.jpg" alt="potrawa3"></div>
+            <div class="slide"><img src="photos/tacos.jpg" alt="potrawa4"></div>
+            <div class="slide"><img src="photos/picanha.jpg" alt="potrawa5"></div>
+            <div class="slide"><img src="photos/padthai.jpg" alt="potrawa6"></div>
+            <div class="slide"><img src="photos/wietnamskiepho.jpeg" alt="potrawa7"></div>
+          </div>
+        </div>
+      
+        <div class="controls" aria-hidden="true">
+          <label class="prev prev1"  for="s7">&lt;</label>
+          <label class="next next1"  for="s2">&gt;</label>
+        
+          <label class="prev prev2"  for="s1">&lt;</label>
+          <label class="next next2"  for="s3">&gt;</label>
+        
+          <label class="prev prev3"  for="s2">&lt;</label>
+          <label class="next next3"  for="s4">&gt;</label>
+        
+          <label class="prev prev4"  for="s3">&lt;</label>
+          <label class="next next4"  for="s5">&gt;</label>
+        
+          <label class="prev prev5"  for="s4">&lt;</label>
+          <label class="next next5"  for="s6">&gt;</label>
+        
+          <label class="prev prev6"  for="s5">&lt;</label>
+          <label class="next next6"  for="s7">&gt;</label>
+        
+          <label class="prev prev7"  for="s6">&lt;</label>
+          <label class="next next7"  for="s1">&gt;</label>
+        </div>
+      
+        <div class="dots" aria-hidden="true">
+          <label for="s1">1</label>
+          <label for="s2">2</label>
+          <label for="s3">3</label>
+          <label for="s4">4</label>
+          <label for="s5">5</label>
+          <label for="s6">6</label>
+          <label for="s7">7</label>
+        </div>
+      
+      </div>
+</main>
+
+<section>
+<div class="div1">
+    <br>
+    <h2 id="opisy">Opisy</h2><br>
+    <ul>
+        <li>
+    Pizza:
+        </li>
+    Ikona kuchni włoskiej, która łączy prostotę z intensywnym smakiem.<br>
+    Ciepła, aromatyczna i sycąca, idealna zarówno na szybki posiłek,<br>
+    jak i długie spotkanie w gronie znajomych.<br>
+    <a href="https://pl.wikipedia.org/wiki/Pizza" target="_blank" class="zewn">Więcej o pizzy</a>
+    <br><br>
+        <li>
+    Kebab turecki:
+        </li>
+    Wyraziste i pełne charakteru danie street foodowe,<br>
+    znane z intensywnego aromatu i sytości. Doskonały wybór,<br>
+    gdy masz ochotę na coś konkretnego i rozgrzewającego.<br>
+    <a href="https://pl.wikipedia.org/wiki/Kebab" target="_blank" class="zewn">Więcej o kebabie</a>
+    <br><br>
+        <li>
+    Falafel:
+        </li>
+    Roślinna propozycja inspirowana kuchnią Bliskiego Wschodu.<br>
+    Lekki, a jednocześnie treściwy, zachwyca ziołowym aromatem i chrupiącą strukturą.<br>
+    <a href="https://pl.wikipedia.org/wiki/Falafel" target="_blank" class="zewn">Więcej o falafelu</a>
+    <br><br>
+        <li>
+    Tacos:
+        </li>
+    Kolorowe, pełne energii danie rodem z Meksyku.<br>
+    Intensywne w smaku, dynamiczne i różnorodne,<br>
+    idealne dla miłośników kuchni z charakterem.<br>
+    <a href="https://pl.wikipedia.org/wiki/Taco" target="_blank" class="zewn">Więcej o tacos</a>
+    <br><br>
+        <li>
+    Picanha:
+        </li>
+    Wykwintna specjalność kuchni południowoamerykańskiej.<br>
+    Soczysta, głęboka w smaku i niezwykle aromatyczna,<br>
+    podawana najczęściej w formie eleganckiego dania głównego.<br>
+    <a href="https://en.wikipedia.org/wiki/Picanha" target="_blank" class="zewn">Więcej o picanha</a>
+    <br><br>
+        <li>
+    Pad Thai:
+        </li>
+    Klasyk kuchni tajskiej, który łączy słodycz,<br>
+    kwaśność i delikatną pikantność. Harmonijny,<br>
+    aromatyczny i niezwykle satysfakcjonujący.<br>
+    <a href="https://pl.wikipedia.org/wiki/Pad_thai" target="_blank" class="zewn">Więcej o pad thai</a>
+    <br><br>
+        <li>
+    Pho (wietnamskie):
+        </li>
+    Tradycyjna wietnamska zupa o głębokim, esencjonalnym charakterze.<br>
+    Delikatna, rozgrzewająca i kojąca, idealna zarówno na chłodny dzień, <br>
+    jak i lekki posiłek.<br>
+    <a href="https://pl.wikipedia.org/wiki/Ph%E1%BB%9F" target="_blank" class="zewn">Więcej o pho</a>
+    </ul>
+</div>
+</section>
+
+<section><br><br>
+<div class="div2">
+    <h2 id="info">Pochodzenie</h2><br>
+    <table>
+        <tr class="row1">
+            <td>
+                Państwo
+            </td>
+            <td>
+                Danie
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Włochy
+            </td>
+            <td>
+                Pizza
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Turcja
+            </td>
+            <td>
+                Kebab
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Egipt
+            </td>
+            <td>
+                Falafel
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Meksyk
+            </td>
+            <td>
+                Tacos
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Brazylia
+            </td>
+            <td>
+                Picanha
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Tajlandia
+            </td>
+            <td>
+                Pad Thai
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Wietnam
+            </td>
+            <td>
+                Pho
+            </td>
+        </tr>
+    </table>
+    <br><br>
+</div>
+</section>  
+<section>
+<div class="div3">
+    <div class="quiz">
+    <h2 id="quiz">Quiz</h2><br>
+    <form>
+    Skąd pochodzi falafel:<br>
+
+    <input type="radio" name="kraj" id="w" value="w">
+    <label for="w">Włochy</label><br>
+
+    <input type="radio" name="kraj" id="e" value="e">
+    <label for="e">Egipt</label><br>
+
+    <input type="radio" name="kraj" id="b" value="b">
+    <label for="b">Brazylia</label><br><br>
+
+    Skąd pochodzi pizza:<br>
+
+    <input type="radio" name="kraj" id="w1" value="w2">
+    <label for="w">Włochy</label><br>
+
+    <input type="radio" name="kraj" id="t1" value="t2">
+    <label for="e">Tajlandia</label><br>
+
+    <input type="radio" name="kraj" id="r1" value="r2">
+    <label for="b">Rosja</label><br><br>
+
+    Które jedzenie lubisz najbardziej:<br>
+
+    <input type="checkbox" name="jedzenie" id="p" value="p">
+    <label for="p">Pizza</label><br>
+
+    <input type="checkbox" name="jedzenie" id="k" value="k">
+    <label for="k">Kebab</label><br>
+
+    <input type="checkbox" name="jedzenie" id="f" value="f">
+    <label for="f">Falafel</label><br>
+
+    <input type="checkbox" name="jedzenie" id="t" value="t">
+    <label for="t">Tacos</label><br>
+
+    <input type="checkbox" name="jedzenie" id="pc" value="pc">
+    <label for="pc">Picanha</label><br>
+
+    <input type="checkbox" name="jedzenie" id="pt" value="pt">
+    <label for="pt">Pad Thai</label><br>
+
+    <input type="checkbox" name="jedzenie" id="wp" value="wp">
+    <label for="wp">Wietnamskie Pho</label><br><br>
+
+    Jak się nazywa danie pochodzące z Brazyli:
+    <input type="text" name="potrawa" id="ptr">
+        <br><br>
+    <button type="submit">Wyślij</button>
+    <button type="reset">Wyczyść</button>
+    </form>
+    </div>
+</div>
+</section>
+<section>
+<div class="div4">
+        <h2 id="film">Gotowanie pizzy</h2><br>
+        <p>
+        <video controls width="600">
+            <source src="photos/pizza.mp4" type="video/mp4">
+        </video>
+        </p>
+</div>
+<br><br>
+<div id="mapa">
+    <h2>Stolica Pizzy</h2><br>
+    <p><iframe style="border:none" src="https://mapy.com/s/ganamotuba" width="400" height="280"></iframe></p>
+</div><br>
+</section>
+<footer>
+    autor: Aliaksandr Padabed 2tb2
+</footer>
+
+</body>
+</html>

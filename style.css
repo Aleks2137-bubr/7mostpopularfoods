@@ -1,0 +1,395 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  animation: menuanimation 0s forwards;
+}
+
+@keyframes menuanimation{
+  0%{
+    transform: scale(100%);
+  }
+
+  100%{
+    transform: scale(120%);
+  }
+}
+
+header{
+    background-color: orange;
+    height: 120px;
+    margin-top: 0;
+    display: flow-root;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    float: left;
+    display: block;
+}
+
+.logo{
+    animation: logo 3s ease-in-out infinite;
+}
+
+@keyframes logo{
+  0%{
+    transform: scaleY(100%);
+  }
+
+  50%{
+    transform: scaleY(110%);
+  }
+
+  100%{
+    transform: scaleY(100%);
+  }
+}
+
+.nagłówek{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+    display: flow-root;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    background-color: orange;
+    color: white;
+}
+
+
+
+section{
+    background-color: #C07E1E;
+    width: 100%;
+    height: auto;
+}
+
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+td{
+    border: 2px solid black;
+}
+
+ul{
+    color: white;
+    font-size: 16px;
+}
+
+.row1{
+    background-color: darkgoldenrod;
+}
+
+.quiz{
+    justify-content: center;
+    border: 2px solid black;
+    background-color: orange;
+    width: 20%;
+    height: auto;
+    margin: 0 auto;
+    bottom: 10px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+p{
+  text-align: center;
+}
+
+.div1{
+  float: left;
+  margin-left: 10px;
+}
+
+.div2{
+  float: left;
+  margin-left: 150px;
+}
+
+.quiz{
+  float: left;
+  margin-left: 300px;
+}
+
+.div4{
+  clear: both;
+}
+
+.zewn:link{
+  color: black;
+  text-decoration: none;
+  font-size: .8em;
+}
+
+.zewn:hover{
+  color: brown;
+  text-decoration: none;
+  font-size: .9em;
+}
+
+.zewn:active{
+  color: purple;
+  text-decoration: none;
+  font-size: .6em;
+}
+
+.zewn:visited{
+  color: maroon;
+  text-decoration: none;
+  font-size: .8em;
+}
+
+.gallery-section{
+  text-align: center;
+  grid-column:1/3;
+  background:#ffffff05;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.slideshow{
+  position: relative;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.slideshow input[type="radio"]{
+  position: absolute;
+  left:-9999px;
+}
+
+.viewport{
+  position: relative;
+  width: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  background:white;
+  height: 300px;
+  margin-left: 250px;
+}
+
+.slides{
+  position: absolute; 
+  inset: 0;
+}
+
+.slide{
+  position: absolute; 
+  inset: 0;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  padding: 0;
+}
+
+.slide img{
+  width: 500px;
+  height: 300px;
+  object-fit: cover; 
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.45s ease, opacity 0.45s ease;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#s1:checked ~ .viewport .slides .slide:nth-of-type(1) img,
+#s2:checked ~ .viewport .slides .slide:nth-of-type(2) img,
+#s3:checked ~ .viewport .slides .slide:nth-of-type(3) img,
+#s4:checked ~ .viewport .slides .slide:nth-of-type(4) img,
+#s5:checked ~ .viewport .slides .slide:nth-of-type(5) img,
+#s6:checked ~ .viewport .slides .slide:nth-of-type(6) img,
+#s7:checked ~ .viewport .slides .slide:nth-of-type(7) img {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transform: scale(1);
+}
+
+.controls{
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.controls label{
+  pointer-events: all;
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background:#00000073;
+  color: white;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  font-size: 26px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #ffffff0f;
+  user-select: none;
+}
+
+/* położenie */
+.controls .prev{
+  left: 12px;
+}
+
+.controls .next{
+  right:12px;
+}
+
+/* włącz odpowiednie etykiety gdy radio jest checked */
+#s1:checked ~ .controls .prev1,  #s1:checked ~ .controls .next1,
+#s2:checked ~ .controls .prev2,  #s2:checked ~ .controls .next2,
+#s3:checked ~ .controls .prev3,  #s3:checked ~ .controls .next3,
+#s4:checked ~ .controls .prev4,  #s4:checked ~ .controls .next4,
+#s5:checked ~ .controls .prev5,  #s5:checked ~ .controls .next5,
+#s6:checked ~ .controls .prev6,  #s6:checked ~ .controls .next6,
+#s7:checked ~ .controls .prev7,  #s7:checked ~ .controls .next7 {
+  display: block;
+  opacity: 0.95;
+}
+
+.dots{
+  margin: 12px 0 0 0;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots label{
+  display: inline-block;
+  padding: 6px 8px;
+  background:#ffffff08;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-size: 13px;
+  user-select: none;
+  transition: transform .15s ease, background .18s ease;
+}
+
+.dots label:hover{
+  transform: translateY(-4px);
+}
+
+#s1:checked ~ .dots label[for="s1"],
+#s2:checked ~ .dots label[for="s2"],
+#s3:checked ~ .dots label[for="s3"],
+#s4:checked ~ .dots label[for="s4"],
+#s5:checked ~ .dots label[for="s5"],
+#s6:checked ~ .dots label[for="s6"],
+#s7:checked ~ .dots label[for="s7"] {
+  background: var(--accent);
+  color:#08111a;
+  font-weight: 700;
+}
+
+.gallery-nav{
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.gallery-nav a {
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background:#ffffff08;
+  color: white;
+}
+
+.content-list{
+  grid-column: 1/3;
+  background:#ffffff05;
+  padding: 12px;
+  border-radius: 12px;
+  margin-top: 12px
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px
+}
+
+table th,table td{
+  border: 1px solid #ffffff0f;
+  padding: 8px;
+  text-align: left
+}
+
+.survey, .media, .map, .about{
+  grid-column: 1/3;
+  background:#ffffff05;
+  padding: 12px;
+  border-radius: 12px;
+  margin-top: 12px
+}
+
+.video-wrapper iframe{
+  width: 100%;
+  max-width: 700px;
+}
+
+.audio-wrapper{
+  margin-top: 12px
+}
+
+.site-footer{
+  padding: 14px;
+  text-align: center;
+  color: lightgrey;
+}
